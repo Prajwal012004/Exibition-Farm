@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Our Farm — Exhibition &amp; Sessions
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700;800&amp;family=Hind:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://checkout.razorpay.com/v1/checkout.js">
+  </script>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="demo-note">
+   <span lang-en="">
+    Demo site with placeholder photos and a sample payment flow — swap in your real photos and Razorpay keys before going live.
+   </span>
+   <span lang-mr="">
+    ही डेमो वेबसाईट आहे — यात नमुना फोटो व नमुना पेमेंट सुविधा आहे. लाईव्ह करण्याआधी खरे फोटो व तुमची Razorpay key टाका.
+   </span>
+  </div>
+  <nav class="nav">
+   <div class="wrap">
+    <div class="mark">
+     <span lang-en="">
+      Our Farm
+     </span>
+     <span lang-mr="">
+      आमचं शेत
+     </span>
+    </div>
+    <ul>
+     <li>
+      <a href="#session">
+       <span lang-en="">
+        Session
+       </span>
+       <span lang-mr="">
+        सत्र
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#teaching">
+       <span lang-en="">
+        Teaching
+       </span>
+       <span lang-mr="">
+        शिक्षण
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#gallery">
+       <span lang-en="">
+        Images
+       </span>
+       <span lang-mr="">
+        छायाचित्रे
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#about">
+       <span lang-en="">
+        About
+       </span>
+       <span lang-mr="">
+        आमच्याबद्दल
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#views">
+       <span lang-en="">
+        Views
+       </span>
+       <span lang-mr="">
+        निसर्ग
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#booking">
+       <span lang-en="">
+        Book a Session
+       </span>
+       <span lang-mr="">
+        तिकीट बुक करा
+       </span>
+      </a>
+     </li>
+    </ul>
+    <div class="nav-right">
+     <div class="lang-toggle">
+      <button class="active" id="btn-en" onclick="setLang('en')">
+       EN
+      </button>
+      <button id="btn-mr" onclick="setLang('mr')">
+       मराठी
+      </button>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <header class="hero">
+   <div class="wrap">
+    <div class="eyebrow">
+     <span lang-en="">
+      FARM EXHIBITION &amp; VISITOR SESSIONS
+     </span>
+     <span lang-mr="">
+      शेत प्रदर्शन आणि भेट सत्रे
+     </span>
+    </div>
+    <h1>
+     <span lang-en="">
+      Come see how your food actually grows.
+     </span>
+     <span lang-mr="">
+      तुमचं अन्न प्रत्यक्षात कसं पिकतं, ते बघायला या.
+     </span>
+    </h1>
+    <p class="sub">
+     <span lang-en="">
+      A working farm open to visitors — walk the fields, learn the methods, and book a guided session with the people who grow the harvest.
+     </span>
+     <span lang-mr="">
+      ही एक चालू शेती आहे, जी पाहुण्यांसाठी खुली आहे — शेतात फिरा, शेतीच्या पद्धती शिका आणि पीक पिकवणाऱ्या शेतकऱ्यांसोबत मार्गदर्शित सत्र बुक करा.
+     </span>
+    </p>
+    <div class="cta-row">
+     <a class="btn btn-primary" href="#booking">
+      <span lang-en="">
+       Book a session
+      </span>
+      <span lang-mr="">
+       सत्र बुक करा
+      </span>
+     </a>
+     <a class="btn btn-outline" href="#gallery">
+      <span lang-en="">
+       See the farm
+      </span>
+      <span lang-mr="">
+       शेत बघा
+      </span>
+     </a>
+    </div>
+    <div class="hero-stats">
+     <div>
+      <div class="num">
+       3
+      </div>
+      <div class="label">
+       <span lang-en="">
+        Generations farming here
+       </span>
+       <span lang-mr="">
+        तीन पिढ्यांची शेती
+       </span>
+      </div>
+     </div>
+     <div>
+      <div class="num">
+       12+
+      </div>
+      <div class="label">
+       <span lang-en="">
+        Crops grown on site
+       </span>
+       <span lang-mr="">
+        १२+ पिकं
+       </span>
+      </div>
+     </div>
+     <div>
+      <div class="num">
+       45min
+      </div>
+      <div class="label">
+       <span lang-en="">
+        Guided session length
+       </span>
+       <span lang-mr="">
+        सत्राचा कालावधी
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!-- SESSION -->
+  <section id="session">
+   <div class="wrap">
+    <div class="head">
+     <div class="kicker">
+      <span lang-en="">
+       SESSION
+      </span>
+      <span lang-mr="">
+       सत्र
+      </span>
+     </div>
+     <h2>
+      <span lang-en="">
+       How farming here has changed
+      </span>
+      <span lang-mr="">
+       इथली शेती कशी बदलत गेली
+      </span>
+     </h2>
+     <p>
+      <span lang-en="">
+       Every visitor session opens with this story — from our grandparents' fields to how we farm today.
+      </span>
+      <span lang-mr="">
+       प्रत्येक सत्राची सुरुवात या गोष्टीने होते — आजी-आजोबांच्या शेतीपासून आजच्या शेतीपर्यंत.
+      </span>
+     </p>
+    </div>
+    <div class="timeline">
+     <div class="tl-item">
+      <div class="tl-era">
+       <span lang-en="">
+        Earlier generations
+       </span>
+       <span lang-mr="">
+        जुनी पिढी
+       </span>
+      </div>
+      <h3>
+       <span lang-en="">
+        Bullock ploughs and rain-fed fields
+       </span>
+       <span lang-mr="">
+        बैलांचा नांगर आणि पावसावर अवलंबून शेती
+       </span>
+      </h3>
+      <p>
+       <span lang-en="">
+        Farming followed the monsoon closely — everything from ploughing to sowing was done by hand and by animal power, passed down as spoken knowledge.
+       </span>
+       <span lang-mr="">
+        शेती पूर्णपणे पावसावर अवलंबून होती — नांगरणीपासून पेरणीपर्यंत सर्व काही हाताने आणि बैलांच्या मदतीने केलं जायचं, आणि हे ज्ञान तोंडी पिढ्यानपिढ्या पुढे जायचं.
+       </span>
+      </p>
+     </div>
+     <div class="tl-item">
+      <div class="tl-era">
+       <span lang-en="">
+        Our parents' time
+       </span>
+       <span lang-mr="">
+        आई-वडिलांची पिढी
+       </span>
+      </div>
+      <h3>
+       <span lang-en="">
+        First tractors and borewells
+       </span>
+       <span lang-mr="">
+        पहिले ट्रॅक्टर आणि बोअरवेल
+       </span>
+      </h3>
+      <p>
+       <span lang-en="">
+        Mechanised ploughing and borewell irrigation meant we could plan sowing instead of waiting entirely on rain.
+       </span>
+       <span lang-mr="">
+        यांत्रिक नांगरणी आणि बोअरवेल सिंचनामुळे संपूर्ण पावसावर अवलंबून न राहता पेरणीचं नियोजन करता येऊ लागलं.
+       </span>
+      </p>
+     </div>
+     <div class="tl-era-holder">
+     </div>
+     <div class="tl-item">
+      <div class="tl-era">
+       <span lang-en="">
+        Today
+       </span>
+       <span lang-mr="">
+        आजची शेती
+       </span>
+      </div>
+      <h3>
+       <span lang-en="">
+        Drip irrigation and mixed cropping
+       </span>
+       <span lang-mr="">
+        ठिबक सिंचन आणि मिश्र पीक पद्धती
+       </span>
+      </h3>
+      <p>
+       <span lang-en="">
+        We now use drip lines to save water, rotate crops to protect the soil, and mix traditional methods with what actually works from newer techniques.
+       </span>
+       <span lang-mr="">
+        आता आम्ही पाणी वाचवण्यासाठी ठिबक सिंचन वापरतो, जमिनीचं आरोग्य राखण्यासाठी पीक फेरपालट करतो आणि जुन्या पद्धतींसोबत उपयोगी नवीन तंत्रज्ञानही वापरतो.
+       </span>
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- TEACHING -->
+  <section id="teaching" style="background:var(--paper-dim);">
+   <div class="wrap">
+    <div class="head">
+     <div class="kicker">
+      <span lang-en="">
+       TEACHING
+      </span>
+      <span lang-mr="">
+       शिक्षण
+      </span>
+     </div>
+     <h2>
+      <span lang-en="">
+       What we walk you through
+      </span>
+      <span lang-mr="">
+       आम्ही तुम्हाला काय शिकवतो
+      </span>
+     </h2>
+     <p>
+      <span lang-en="">
+       Hands-on stations across the farm — visitors get to try most of these themselves.
+      </span>
+      <span lang-mr="">
+       शेतात ठिकठिकाणी प्रत्यक्ष कृतीतून शिकण्याची संधी — पाहुणे स्वतः यातील बहुतांश गोष्टी करून बघू शकतात.
+      </span>
+     </p>
+    </div>
+    <div class="teach-grid" id="teach-grid">
+    </div>
+   </div>
+  </section>
+  <!-- GALLERY -->
+  <section id="gallery">
+   <div class="wrap">
+    <div class="head">
+     <div class="kicker">
+      <span lang-en="">
+       IMAGES
+      </span>
+      <span lang-mr="">
+       छायाचित्रे
+      </span>
+     </div>
+     <h2>
+      <span lang-en="">
+       A look around the farm
+      </span>
+      <span lang-mr="">
+       शेताची झलक
+      </span>
+     </h2>
+     <p>
+      <span lang-en="">
+       Placeholder photos for now — swap these with your own before launch.
+      </span>
+      <span lang-mr="">
+       सध्या हे नमुना फोटो आहेत — वेबसाईट लाईव्ह करण्याआधी तुमचे स्वतःचे फोटो टाका.
+      </span>
+     </p>
+    </div>
+    <div class="gallery" id="gallery-grid">
+    </div>
+   </div>
+  </section>
+  <!-- ABOUT -->
+  <section id="about" style="background:var(--paper-dim);">
+   <div class="wrap">
+    <div class="head">
+     <div class="kicker">
+      <span lang-en="">
+       ABOUT
+      </span>
+      <span lang-mr="">
+       आमच्याबद्दल
+      </span>
+     </div>
+     <h2>
+      <span lang-en="">
+       Farming, explained plainly
+      </span>
+      <span lang-mr="">
+       सोप्या भाषेत शेतीची माहिती
+      </span>
+     </h2>
+    </div>
+    <div class="about-grid">
+     <div>
+      <p>
+       <span lang-en="">
+        This farm has been worked by our family for three generations. What started as a small rain-fed plot has grown into a mixed farm growing grains, vegetables, and fruit, alongside a small number of animals.
+       </span>
+       <span lang-mr="">
+        हे शेत आमच्या कुटुंबाने तीन पिढ्यांपासून सांभाळलं आहे. एका लहान, पावसावर अवलंबून असलेल्या शेतापासून सुरुवात होऊन आज इथे धान्य, भाजीपाला आणि फळांसोबत काही जनावरेही सांभाळली जातात.
+       </span>
+      </p>
+      <p>
+       <span lang-en="">
+        We started opening the farm to visitors because most people — especially children — have never seen where their food actually comes from. These sessions are our way of showing that, honestly and without dressing it up.
+       </span>
+       <span lang-mr="">
+        आम्ही शेत पाहुण्यांसाठी खुलं केलं कारण बहुतेक लोकांनी — विशेषतः लहान मुलांनी — त्यांचं अन्न नक्की कुठून येतं, हे कधीच बघितलेलं नसतं. ही सत्रे हेच खरं चित्र, कोणताही आव न आणता, दाखवण्याचा आमचा प्रयत्न आहे.
+       </span>
+      </p>
+     </div>
+     <div class="facts">
+      <div class="fact">
+       <div class="num">
+        1991
+       </div>
+       <div class="label">
+        <span lang-en="">
+         Farm established
+        </span>
+        <span lang-mr="">
+         शेताची सुरुवात
+        </span>
+       </div>
+      </div>
+      <div class="fact">
+       <div class="num">
+        8
+       </div>
+       <div class="label">
+        <span lang-en="">
+         Acres under cultivation
+        </span>
+        <span lang-mr="">
+         एकर लागवडीखाली
+        </span>
+       </div>
+      </div>
+      <div class="fact">
+       <div class="num">
+        12+
+       </div>
+       <div class="label">
+        <span lang-en="">
+         Crops &amp; varieties
+        </span>
+        <span lang-mr="">
+         पिके व वाण
+        </span>
+       </div>
+      </div>
+      <div class="fact">
+       <div class="num">
+        3
+       </div>
+       <div class="label">
+        <span lang-en="">
+         Generations
+        </span>
+        <span lang-mr="">
+         पिढ्या
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- VIEWS -->
+  <section class="views-section" id="views">
+   <div class="wrap">
+    <div class="head">
+     <div class="kicker">
+      <span lang-en="">
+       VIEWS
+      </span>
+      <span lang-mr="">
+       निसर्ग
+      </span>
+     </div>
+     <h2>
+      <span lang-en="">
+       Nature around the farm
+      </span>
+      <span lang-mr="">
+       शेताभोवतीचा निसर्ग
+      </span>
+     </h2>
+     <p>
+      <span lang-en="">
+       Scroll sideways — these are the spots visitors stop at longest.
+      </span>
+      <span lang-mr="">
+       बाजूला सरकवून बघा — पाहुणे इथेच सगळ्यात जास्त वेळ थांबतात.
+      </span>
+     </p>
+    </div>
+    <div class="views-scroll">
+     <div class="view-card">
+      <h3>
+       <span lang-en="">
+        Sunrise over the fields
+       </span>
+       <span lang-mr="">
+        शेतावरचा सूर्योदय
+       </span>
+      </h3>
+     </div>
+     <div class="view-card">
+      <h3>
+       <span lang-en="">
+        The old pond
+       </span>
+       <span lang-mr="">
+        जुना तलाव
+       </span>
+      </h3>
+     </div>
+     <div class="view-card">
+      <h3>
+       <span lang-en="">
+        Mango orchard path
+       </span>
+       <span lang-mr="">
+        आंब्याच्या बागेची वाट
+       </span>
+      </h3>
+     </div>
+     <div class="view-card">
+      <h3>
+       <span lang-en="">
+        Hills to the east
+       </span>
+       <span lang-mr="">
+        पूर्वेकडील डोंगर
+       </span>
+      </h3>
+     </div>
+     <div class="view-card">
+      <h3>
+       <span lang-en="">
+        Evening at the well
+       </span>
+       <span lang-mr="">
+        विहिरीवरची संध्याकाळ
+       </span>
+      </h3>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- BOOKING -->
+  <section id="booking">
+   <div class="wrap">
+    <div class="head">
+     <div class="kicker">
+      <span lang-en="">
+       TICKET BOOKING
+      </span>
+      <span lang-mr="">
+       तिकीट बुकिंग
+      </span>
+     </div>
+     <h2>
+      <span lang-en="">
+       Book a session
+      </span>
+      <span lang-mr="">
+       सत्र बुक करा
+      </span>
+     </h2>
+     <p>
+      <span lang-en="">
+       Pick a session, fill your details, and pay to confirm your spot.
+      </span>
+      <span lang-mr="">
+       सत्र निवडा, तुमची माहिती भरा आणि पैसे भरून जागा निश्चित करा.
+      </span>
+     </p>
+    </div>
+    <div class="booking-wrap">
+     <div id="session-list">
+      <!-- Session cards are inserted here by JavaScript, from the backend's content -->
+     </div>
+     <form class="booking-form" id="booking-form" onsubmit="return false;">
+      <div class="field">
+       <label>
+        <span lang-en="">
+         Full name
+        </span>
+        <span lang-mr="">
+         पूर्ण नाव
+        </span>
+       </label>
+       <input id="f-name" required="" type="text"/>
+      </div>
+      <div class="field-row">
+       <div class="field">
+        <label>
+         <span lang-en="">
+          Phone
+         </span>
+         <span lang-mr="">
+          फोन नंबर
+         </span>
+        </label>
+        <input id="f-phone" required="" type="tel"/>
+       </div>
+       <div class="field">
+        <label>
+         <span lang-en="">
+          Email
+         </span>
+         <span lang-mr="">
+          ईमेल
+         </span>
+        </label>
+        <input id="f-email" required="" type="email"/>
+       </div>
+      </div>
+      <div class="field-row">
+       <div class="field">
+        <label>
+         <span lang-en="">
+          Visit date
+         </span>
+         <span lang-mr="">
+          भेटीची तारीख
+         </span>
+        </label>
+        <input id="f-date" required="" type="date"/>
+       </div>
+       <div class="field">
+        <label>
+         <span lang-en="">
+          Number of guests
+         </span>
+         <span lang-mr="">
+          पाहुण्यांची संख्या
+         </span>
+        </label>
+        <input id="f-guests" min="1" required="" type="number" value="1"/>
+       </div>
+      </div>
+      <div class="total-row">
+       <span>
+        <span lang-en="">
+         Total amount
+        </span>
+        <span lang-mr="">
+         एकूण रक्कम
+        </span>
+       </span>
+       <span class="amt" id="total-amt">
+        ₹199
+       </span>
+      </div>
+      <button class="btn btn-clay" onclick="payNow()" style="width:100%; text-align:center;">
+       <span lang-en="">
+        Pay &amp; book session
+       </span>
+       <span lang-mr="">
+        पैसे भरा आणि सत्र बुक करा
+       </span>
+      </button>
+      <div id="pay-msg">
+      </div>
+     </form>
+    </div>
+   </div>
+  </section>
+  <footer>
+   <div class="wrap">
+    <div class="cols">
+     <div>
+      <h3>
+       <span lang-en="">
+        Our Farm
+       </span>
+       <span lang-mr="">
+        आमचं शेत
+       </span>
+      </h3>
+      <p>
+       <span lang-en="">
+        Open for visitor sessions, Tue–Sun.
+       </span>
+       <span lang-mr="">
+        पाहुण्यांसाठी सत्रे उपलब्ध, मंगळवार ते रविवार.
+       </span>
+      </p>
+     </div>
+     <div>
+      <h3>
+       <span lang-en="">
+        Contact
+       </span>
+       <span lang-mr="">
+        संपर्क
+       </span>
+      </h3>
+      <p>
+       +91 XXXXX XXXXX
+      </p>
+      <p>
+       yourfarm@example.com
+      </p>
+     </div>
+    </div>
+    <div class="bottom">
+     <span lang-en="">
+      © 2026 Our Farm. Replace this placeholder text and photos with your own before publishing.
+     </span>
+     <span lang-mr="">
+      © 2026 आमचं शेत. वेबसाईट प्रकाशित करण्याआधी हा नमुना मजकूर व फोटो तुमच्या स्वतःच्या माहितीने बदला.
+     </span>
+    </div>
+   </div>
+  </footer>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>
+

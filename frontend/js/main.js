@@ -1,5 +1,5 @@
 // Backend server
-var BACKEND_URL = "http://localhost:4000";
+var BACKEND_URL = "http://127.0.0.1:8000";
 
 
 // ---------------------------------------------------------------
@@ -74,7 +74,7 @@ function updateTotal() {
 
 function loadContent() {
 
-    fetch(BACKEND_URL + '/api/content')
+    fetch(BACKEND_URL + '/api/sessions')
 
         .then(function (r) {
             return r.json();
